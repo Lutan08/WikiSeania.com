@@ -1,0 +1,155 @@
+/* Grundinställningar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('sean1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header och navbar */
+header {
+    padding: 20px 0;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #ff3366;
+    transform: translateY(-2px);
+}
+
+/* Container / huvuddel */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.25); /* lite mer transparent för glas-effekt */
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    color: #fff; /* vit text för bättre kontrast mot bakgrund */
+}
+
+/* Rubriker */
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+h2 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Stycken */
+p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.pr {
+    font-style: italic;
+}
+
+/* Strong */
+strong {
+    color: #ff3366;
+}
+
+
+.container p:last-child {
+    margin-bottom: 0;
+}
+
+
+.bild-box img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.5s;
+}
+
+.bild-box img:hover {
+    transform: scale(1.02);
+}
+
+.container ul {
+    color: #000;     
+}
+
+.container ul li {
+    color: #000;       
+}
+
+.container ul li strong {
+    color: #ff3366;    
+}
+
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+	
+
+
+}
